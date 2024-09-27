@@ -1,0 +1,7 @@
+com/editor/TextFile.class
+module-info.class
+com/editor/Main.class
+com/editor/PrimaryController.class
+com/editor/SecondaryModel.class
+com/editor/SecondaryController.class
+com/editor/App.class
