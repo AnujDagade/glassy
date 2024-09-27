@@ -44,9 +44,10 @@ public class SecondaryController {
     private  SecondaryModel secondaryModel;
     
     @FXML
-    public void onSave() {
+    public void onSave() throws IOException {
         System.out.println("Save");
         System.out.println(secondaryModel.getText());
+        secondaryModel.save();
     }
 
     @FXML
