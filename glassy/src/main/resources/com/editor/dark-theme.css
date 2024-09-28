@@ -1,0 +1,25 @@
+.root {
+    -fx-base: #333333;
+    -fx-background: #333333;
+    -fx-text-fill: #FFFFFF;
+}
+
+.menu-bar {
+    -fx-background-color: #444444;
+}
+
+.menu {
+    -fx-background-color: #444444;
+    -fx-text-fill: #FFFFFF;
+}
+
+.menu-item {
+    -fx-background-color: #444444;
+    -fx-text-fill: #FFFFFF;
+}
+
+.text-area {
+    -fx-control-inner-background: #444444;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-font: 14px "Courier New";
+}
