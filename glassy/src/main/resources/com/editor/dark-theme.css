@@ -23,3 +23,7 @@
     -fx-text-fill: #FFFFFF;
     -fx-text-font: 14px "Courier New";
 }
+.button .polygon {
+    -fx-fill: green;
+}
+

@@ -21,6 +21,10 @@ public class SecondaryModel {
         }
     }
 
+    public Path getPath() {
+        return textFile.getFile();
+    }
+
     public void open(Path path) {
         try {
             textFile = new TextFile(path);

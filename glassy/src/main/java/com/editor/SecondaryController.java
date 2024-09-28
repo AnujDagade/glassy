@@ -2,6 +2,8 @@ package com.editor;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextArea;
@@ -42,6 +44,22 @@ public class SecondaryController {
 
     @FXML
     private  SecondaryModel secondaryModel;
+
+    @FXML
+    private void onRun() {
+       Path path = secondaryModel.getPath();
+       System.out.println(path);
+       ProcessBuilder processBuilder = null;
+       if(path.toString().endsWith(".py")) {
+        processBuilder = new ProcessBuilder("alacritty", "-e", "bash", "-c", "python3 " + path.toString() + "; read -p 'Press Enter to continue...'");
+       }
+    //    processBuilder = new ProcessBuilder("alacritty", "-e", "java", path.toString());
+       try {
+            processBuilder.start();
+       } catch (IOException | NullPointerException e) {
+            e.printStackTrace();
+         }
+    }
     
     @FXML
     public void onSave() throws IOException {
